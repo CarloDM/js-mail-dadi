@@ -54,23 +54,21 @@ else {
   utenteNonVerificato = risposte[R]
   message.append(utenteNonVerificato)
 }
-
 // -------------------------------------------------------------------
+// ----------------------------------------------------------------
 /** 
  * 1 variabile dado è un arrai di 6 numeri dallo [0 al 5]
  * 2 servono 2 dadi distinti il cui risultato va confrontato e messo  a condizione di maggiore o minore
  * 3 serve la randomizzazzione dei 2 dadi
- * 
- * 
+ * 4 aggiungiere punteggio
  */
 
-// trigghiamo
+// dichiarare punteggio!
 punteggioB = 0;
 punteggioA = 0;
 
+// ------------------------------trig----------
 btn_lancio.addEventListener('click', function(){
-
-
 
   const dado = [1,2,3,4,5,6]
   console.log(dado)
@@ -100,15 +98,6 @@ btn_lancio.addEventListener('click', function(){
   
       console.log( 'punti A',punteggioA)
       console.log( 'punti B',punteggioB)
-
-
-
-
-
-
-
-
-
 
 })
 
