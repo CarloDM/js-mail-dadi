@@ -64,33 +64,52 @@ else {
  * 
  */
 
-const dado = [1,2,3,4,5,6]
-console.log(dado)
-R = Math.floor(Math.random() * dado.length)
-dadoLanciato = dado[R]
-console.log(dadoLanciato)
-R2 = Math.floor(Math.random() * dado.length)
-dadoLanciato2 = dado[R2]
-console.log(dadoLanciato2)
+// trigghiamo
+punteggioB = 0;
+punteggioA = 0;
 
-    A = dadoLanciato
-    B = dadoLanciato2 
-    punteggioB = 0;
-    punteggioA = 0;
+btn_lancio.addEventListener('click', function(){
 
-    if (A > B) {
-      console.log('a ha vinto')
-      punteggioB++;
-    }
-    else if (A == B) {
-      console.log('è pari')
-    }
 
-    else {
-      console.log('b ha vinto')
-      punteggioB++;
-    }
 
-    console.log(punteggioA)
-    console.log(punteggioB)
+  const dado = [1,2,3,4,5,6]
+  console.log(dado)
+  R = Math.floor(Math.random() * dado.length)
+  dadoLanciato = dado[R]
+  console.log(dadoLanciato)
+  R2 = Math.floor(Math.random() * dado.length)
+  dadoLanciato2 = dado[R2]
+  console.log(dadoLanciato2)
+  
+      A = dadoLanciato
+      B = dadoLanciato2 
+
+  
+      if (A > B) {
+        console.log('a ha vinto')
+        punteggioA++;
+      }
+      else if (A == B) {
+        console.log('è pari')
+      }
+  
+      else {
+        console.log('b ha vinto')
+        punteggioB++;
+      }
+  
+      console.log( 'punti A',punteggioA)
+      console.log( 'punti B',punteggioB)
+
+
+
+
+
+
+
+
+
+
+})
+
 
