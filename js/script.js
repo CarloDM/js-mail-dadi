@@ -4,8 +4,8 @@
 3. risposta vero o falso
 */
 
-// let eMail = prompt('la tua mail giusta può esser soltanto "pinko,pallon e io"')
-let eMail = 'pallon'
+let eMail = prompt('la tua mail giusta può esser soltanto "pinko,pallon e io"')
+// let eMail = 'io'
 let eMailCon = ['pinko', 'pallon','io']
 
 
@@ -15,6 +15,7 @@ console.log('ciao creo un array mailconsentite', eMailCon);
 // devo verificare se email è presente dentro l array
 // 1 prima devo spacchettare l array splittandolo
 
+autenticato = 0;
     // eMailConSplit.split(' ')
 for (let i = 0; i < eMailCon.length; i++) {
   let eMailConSplit = eMailCon[i]; 
@@ -22,6 +23,10 @@ for (let i = 0; i < eMailCon.length; i++) {
 //  mi sono incastrato nell uguale uguale uguale -.-
     if (eMail === eMailConSplit)  {
       console.log('utente verificato!')
+      // ------esegui azione di risposta
+
+      autenticato = 1; //<------------- 
+
 }
     else {
       console.log('utente non verificato')
@@ -30,4 +35,14 @@ for (let i = 0; i < eMailCon.length; i++) {
 }
 // 
 
+console.log(autenticato)
 
+if (autenticato){
+  console.log('OK')
+  message.append('utente verificato!')
+}
+
+else {
+  console.log('NO')
+  message.append('accesso negato!')
+}
