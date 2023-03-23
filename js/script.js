@@ -72,3 +72,25 @@ console.log(dadoLanciato)
 R2 = Math.floor(Math.random() * dado.length)
 dadoLanciato2 = dado[R2]
 console.log(dadoLanciato2)
+
+    A = dadoLanciato
+    B = dadoLanciato2 
+    punteggioB = 0;
+    punteggioA = 0;
+
+    if (A > B) {
+      console.log('a ha vinto')
+      punteggioB++;
+    }
+    else if (A == B) {
+      console.log('è pari')
+    }
+
+    else {
+      console.log('b ha vinto')
+      punteggioB++;
+    }
+
+    console.log(punteggioA)
+    console.log(punteggioB)
+
