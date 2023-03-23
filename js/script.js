@@ -4,10 +4,10 @@
 3. risposta vero o falso
 */
 
-// let eMail = prompt('la tua mail giusta può esser soltanto "pinko,pallon e io"')
 let eMail = 'io'
-let eMailCon = ['pinko', 'pallon','io']
+// let eMail = prompt('la tua mail giusta può esser soltanto "pinko,pallon e io"')
 
+let eMailCon = ['pinko', 'pallon','io']
 
 console.log('ciao creo una variabile email', eMail);
 console.log('ciao creo un array mailconsentite', eMailCon);
@@ -67,8 +67,11 @@ else {
 punteggioB = 0;
 punteggioA = 0;
 
+// ----------------------------------------------------
+
 // ------------------------------trig----------
 btn_lancio.addEventListener('click', function(){
+
 
   const dado = [1,2,3,4,5,6]
   console.log(dado)
@@ -98,6 +101,34 @@ btn_lancio.addEventListener('click', function(){
   
       console.log( 'punti A',punteggioA)
       console.log( 'punti B',punteggioB)
+      // se punteggio arriva a 6 gioco finisce
+// quinde se punteggio a || b supera 6 scatta un evento
+// 
+
+if (punteggioA > 5) {
+  console.log('VITTORIA!!! di a')
+  // ci vuole un evento che fermi il gioco
+  console.log('escape?')
+  
+  // ---------fine bottone----------
+  document.querySelector('#btn_lancio'),
+  btn_lancio.style.cssText = "display:none;"
+  console.log('bottone lancio', btn_lancio);
+  // --------------------------------------
+}
+else if (punteggioB > 5) {
+  console.log('VITTORIA!!! di b')
+  document.querySelector('#btn_lancio'),
+  console.log('bottone lancio')
+
+  console.log('escape?')
+  
+  // ---------fine bottone----------
+  document.querySelector('#btn_lancio'),
+  btn_lancio.style.cssText = "display:none;"
+  console.log('bottone lancio', btn_lancio);
+  // --------------------------------------
+}
 
 })
 
