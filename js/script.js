@@ -39,10 +39,18 @@ console.log(autenticato)
 
 if (autenticato){
   console.log('OK')
-  message.append('utente verificato!')
+  risposte = ['verificato!','benvenuto!','sei dentro!','heila chi si rivede!!']
+  R = Math.floor(Math.random() * risposte.length)
+  console.log('R', R)
+  utenteVerificato = risposte[R]
+  message.append(utenteVerificato)
 }
 
 else {
   console.log('NO')
-  message.append('accesso negato!')
+  risposte = ['negato!','accesso negato!','sei fuori!','chi è lei?!']
+  R = Math.floor(Math.random() * risposte.length)
+  console.log('R', R)
+  utenteNonVerificato = risposte[R]
+  message.append(utenteNonVerificato)
 }
